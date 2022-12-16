@@ -1,0 +1,93 @@
+@import "./utils/text.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    font-family:Noto Sans KR;
+}
+
+body{
+    overflow-x: hidden;
+}
+.ios-center {
+    display: -webkit-inline-box;
+    vertical-align: middle;
+}
+
+.relay_toast{
+    background-color: #000 !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .top-container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        min-width: 320px;
+        max-width: 420px;
+        background-color: #ffffff;
+    }
+
+    .head-container-black {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 320px;
+        max-width: 420px;
+        background-color: #000;
+    }
+
+    .bottom-nav-container {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 320px;
+        max-width: 420px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .head-container {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 320px;
+        max-width: 420px;
+        background-color: #ffffff;
+    }
+
+    .head-container-noColor {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 320px;
+        max-width: 420px;
+    }
+
+    .main-bg{
+        background-color: rgb(246, 250, 251);
+    }
+}
+
+
+.flicking-arrow-prev.is-thin::before, .flicking-arrow-prev.is-thin::after, .flicking-arrow-next.is-thin::before, .flicking-arrow-next.is-thin::after{
+    height: 2px !important;
+}
+
+.flicking-arrow-prev::before, .flicking-arrow-prev::after, .flicking-arrow-next::before, .flicking-arrow-next::after {
+    width: 35px !important;
+    background-color:#ffffff !important;
+}
+
+.gray-arrow.flicking-arrow-prev::before, .gray-arrow.flicking-arrow-prev::after, .gray-arrow.flicking-arrow-next::before, .gray-arrow.flicking-arrow-next::after {
+    width: 35px !important;
+    background-color:#ececec !important;
+}
+
+
+.flicking-pagination-bullet{
+    background-color: #d5d5d5 !important;
+}
+
+.flicking-pagination-bullet-active{
+    background-color: #1eb087 !important;
+}
