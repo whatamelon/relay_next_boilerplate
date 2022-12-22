@@ -15,7 +15,10 @@ export default defineNuxtConfig({
       }
     },
     imports: {
-      dirs: ['store'],
+      dirs: [
+        'store',
+        // 'composables/*/*.{ts,js,mjs,mts}',
+      ],
     },
     css: [
       '~/assets/css/main.css',
