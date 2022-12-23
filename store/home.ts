@@ -1,20 +1,19 @@
-export const useHome = defineStore({
-  id: 'Home',
-
+export const useHomeStore = defineStore('Home',{
   state() {
     return {
-      HOME_DATA:{} as HomeModel
+      HOME_DTO:{} as HomeModel
     }
   },
 
   getters: {
-    HOME_DATA: state => {return state.HOME_DATA;},
+    HOME_DTO: state => {return state.HOME_DTO;},
   },
 
   actions: {
-    getHomeData(homedata ?: HomeModel) {
+    setHomeData(homedata ?: HomeModel) {
       if(homedata) {
-        this.HOME_DATA = new HomeFactory(
+        console.log(homedata)
+        this.HOME_DTO = new HomeFactory(
           homedata.tokenValid,
           homedata.cartCnt,
           homedata.topBanners,
