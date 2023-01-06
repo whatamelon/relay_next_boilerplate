@@ -15,7 +15,7 @@ export default {
             },
             async onResponse({ request, response, options }) {
                 console.log('[fetch response]')
-                console.log(response)
+                console.log(response._data)
             },
             async onResponseError({ request, response, options }) {
                 console.log('[fetch response error]')
@@ -39,7 +39,7 @@ export default {
             },
             async onResponse({ request, response, options }) {
                 console.log('[fetch response]')
-                console.log(response)
+                console.log(response._data)
             },
             async onResponseError({ request, response, options }) {
                 console.log('[fetch response error]')

@@ -24,6 +24,9 @@ export default defineNuxtConfig({
     css: [
       '~/assets/css/main.css',
     ],
+    plugins:[
+      { src: '~/plugins/infinitegrid.client.ts' }
+    ],
     postcss: {
       plugins: {
         tailwindcss: {},

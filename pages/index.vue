@@ -5,7 +5,8 @@
                 {{ banner.titleTxt }}
             </div>
         </div>
-        <div v-else class="w-96 h-96 bg-coolgray-900">
+        <div v-else class="w-96 h-96 bg-coolgray-300 m-auto">
+            <p class="m-auto">Loading~</p>
         </div>
     </div>
 </template>
@@ -17,7 +18,7 @@ const homeStore = useHomeStore();
 const { pending,data:home } = await useAPI.callLazyAsyncData('/v1/homes/list', 'home');
 
 watch(home, (newHome) => {
-    console.log(newHome.result) 
+    console.log(newHome.result)
     homeStore.setHomeData(newHome.result);
 })
 

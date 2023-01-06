@@ -1,5 +1,8 @@
 <template>
     <main>
-        <slot></slot>
+        <Header></Header>
+        <div class="pt-12">
+            <slot></slot>
+        </div>
     </main>
 </template>
